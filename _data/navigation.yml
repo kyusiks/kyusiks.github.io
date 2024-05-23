@@ -1,52 +1,462 @@
 header:
-  - titles:
-      # @start locale config
-      en      : &EN       Archive
-      en-GB   : *EN
-      en-US   : *EN
-      en-CA   : *EN
-      en-AU   : *EN
-      zh-Hans : &ZH_HANS  归档
-      zh      : *ZH_HANS
-      zh-CN   : *ZH_HANS
-      zh-SG   : *ZH_HANS
-      zh-Hant : &ZH_HANT  歸檔
-      zh-TW   : *ZH_HANT
-      zh-HK   : *ZH_HANT
-      ko      : &KO       아카이브
-      ko-KR   : *KO
-      fr      : &FR       Archives
-      fr-BE   : *FR
-      fr-CA   : *FR
-      fr-CH   : *FR
-      fr-FR   : *FR
-      fr-LU   : *FR
-      tr      : &TR       Arşivdekiler
-      # @end locale config
-    url: /archive.html
+  - title:      Home
+    url:        /
+  - title:      Archive
+    url:        /archive.html
+  - title:      SQLP
+    url:        /docs/sqlp/1-1-1_데이터모델의이해
+    key:        docs-sqlp
+  - title:      DAP
+    url:        /docs/dap/1-1-1-전사아키텍처-정의
+    key:        docs-dap
+  - title:      Samples
+    url:        /samples.html
+    key:        samples
+  - title:      About
+    url:        /about.html
+  - title:      GitHub
+    url:        https://github.com/kitian616/jekyll-TeXt-theme
 
-  - titles:
-      # @start locale config
-      en      : &EN       About
-      en-GB   : *EN
-      en-US   : *EN
-      en-CA   : *EN
-      en-AU   : *EN
-      zh-Hans : &ZH_HANS  关于
-      zh      : *ZH_HANS
-      zh-CN   : *ZH_HANS
-      zh-SG   : *ZH_HANS
-      zh-Hant : &ZH_HANT  關於
-      zh-TW   : *ZH_HANT
-      zh-HK   : *ZH_HANT
-      ko      : &KO       소개
-      ko-KR   : *KO
-      fr      : &FR       À propos
-      fr-BE   : *FR
-      fr-CA   : *FR
-      fr-CH   : *FR
-      fr-FR   : *FR
-      fr-LU   : *FR
-      tr      : &TR       Hakkında
-      # @end locale config
-    url: /about.html
+docs-sqlp:
+  - title:      😦 과목1 데이터모델의 이해
+  - title:      ⭐ 제1장 데이터 모델링의 이해
+    children:
+      - title:  🌠 1-1-1. 데이터 모델의 이해
+        url:    /docs/sqlp/1-1-1_데이터모델의이해
+      - title:  🌠 1-1-2. 엔터티(Entity)
+        url:    /docs/sqlp/1-1-2_엔터티Entity
+      - title:  🌠 1-1-3. 속성(Attribute)
+        url:    /docs/sqlp/1-1-3_속성Attribute
+      - title:  🌠 1-1-4. 관계(Relationship)
+        url:    /docs/sqlp/1-1-4_관계Relationship
+      - title:  🌠 1-1-5. 식별자
+        url:    /docs/sqlp/1-1-5_식별자
+  - title:      ⭐ 제2장 데이터 모델과 SQL
+    children:
+      - title:  ❌ 1-2-1. 정규화
+        url:    /docs/sqlp/1-2-1_정규화
+      - title:  ❌ 1-2-2. 관계와 조인의 이해
+        url:    /docs/sqlp/1-2-2_관계와조인의이해
+      - title:  ❌ 1-2-3. 모델이 표현하는 트랜잭션의 이해
+        url:    /docs/sqlp/1-2-3_모델이표현하는트랜잭션의이해
+      - title:  ❌ 1-2-4. Null 속성의 이해
+        url:    /docs/sqlp/1-2-4_Null속성의이해
+      - title:  ❌ 1-2-5. 본질식별자 vs. 인조식별자
+        url:    /docs/sqlp/1-2-5_본질식별자vs인조식별자
+  - title:      😧 과목2. SQL 기본과 활용
+  - title:      ⭐ 제1장 SQL 기본
+    children:
+      - title:  🌠 2-1-1. 관계형 데이터베이스 개요
+        url:    /docs/sqlp/2-1-1_관계형데이터베이스개요
+      - title:  🌠 2-1-2. SELECT문
+        url:    /docs/sqlp/2-1-2_SELECT문
+      - title:  🌠 2-1-3. 함수(FUNCTION)
+        url:    /docs/sqlp/2-1-3_함수FUNCTION
+      - title:  🌠 2-1-4. WHERE 절
+        url:    /docs/sqlp/2-1-4_WHERE절
+      - title:  🌠 2-1-5. GROUP BY, HAVING 절
+        url:    /docs/sqlp/2-1-5_GROUPBYHAVING절
+      - title:  🌠 2-1-6. ORDER BY 절
+        url:    /docs/sqlp/2-1-6_ORDERBY절
+      - title:  🌠 2-1-7. 조인
+        url:    /docs/sqlp/2-1-7_조인
+      - title:  🌠 2-1-8. 표준 조인
+        url:    /docs/sqlp/2-1-8_표준조인
+  - title:      ⭐ 제2장 SQL 활용
+    children:
+      - title:  🌠 2-2-1. 서브 쿼리
+        url:    /docs/sqlp/2-2-1_서브쿼리
+      - title:  🌠 2-2-2. 집합 연산자
+        url:    /docs/sqlp/2-2-2_집합연산자
+      - title:  🌠 2-2-3. 그룹 함수
+        url:    /docs/sqlp/2-2-3_그룹함수
+      - title:  🌠 2-2-4. 윈도우 함수
+        url:    /docs/sqlp/2-2-4_윈도우함수
+      - title:  🌠 2-2-5. Top N 쿼리
+        url:    /docs/sqlp/2-2-5_TopN쿼리
+      - title:  🌠 2-2-6. 계층형 질의와 셀프 조인
+        url:    /docs/sqlp/2-2-6_계층형질의와셀프조인
+      - title:  ❌ 2-2-7. PIVOT 절과 UNPIVOT 절
+        url:    /docs/sqlp/2-2-7_PIVOT절과UNPIVOT절
+      - title:  ❌ 2-2-8. 정규 표현식
+        url:    /docs/sqlp/2-2-8_정규표현식
+  - title:      ⭐ 제3장 관리 구문
+    children:
+      - title:  🌠 2-3-1. DML
+        url:    /docs/sqlp/2-3-1_DML
+      - title:  🌠 2-3-2. TCL
+        url:    /docs/sqlp/2-3-2_TCL
+      - title:  🌠 2-3-3. DDL
+        url:    /docs/sqlp/2-3-3_DDL
+      - title:  🌠 2-3-4. DCL
+        url:    /docs/sqlp/2-3-4_DCL
+  - title:      😨 과목3. SQL 고급 활용 및 튜닝
+  - title:      ⭐ 제1장 SQL 수행 구조
+    children:
+      - title:  🌠 3-1-1. 데이터베이스 아키텍처
+        url:    /docs/sqlp/3-1-1_데이터베이스아키텍처
+      - title:  🌠 3-1-2. SQL 처리 과정
+        url:    /docs/sqlp/3-1-2_SQL처리과정
+      - title:  🌠 3-1-3. 데이터베이스 I/O 메커니즘
+        url:    /docs/sqlp/3-1-3_데이터베이스IO메커니즘
+  - title:      ⭐ 제2장 SQL 분석 도구
+    children:
+      - title:  ❌ 3-2-1. 예상 실행계획
+        url:    /docs/sqlp/3-2-1_예상실행계획
+      - title:  ❌ 3-2-2. SQL 트레이스
+        url:    /docs/sqlp/3-2-2_SQL트레이스
+      - title:  ❌ 3-2-3. 응답 시간 분석
+        url:    /docs/sqlp/3-2-3_응답시간분석
+  - title:      ⭐ 제3장 인덱스 튜닝
+    children:
+      - title:  🌠 3-3-1. 인덱스 기본 원리
+        url:    /docs/sqlp/3-3-1_인덱스기본원리
+      - title:  🌠 3-3-2. 테이블 액세스 최소화
+        url:    /docs/sqlp/3-3-2_테이블액세스최소화
+      - title:  🌠 3-3-3. 인덱스 스캔 효율화
+        url:    /docs/sqlp/3-3-3_인덱스스캔효율화
+      - title:  🌠 3-3-4. 인덱스 설계
+        url:    /docs/sqlp/3-3-4_인덱스설계
+  - title:      ⭐ 제4장 조인 튜닝
+    children:
+      - title:  🌠 3-4-1. NL 조인
+        url:    /docs/sqlp/3-4-1_NL조인
+      - title:  🌠 3-4-2. 소트 머지 조인
+        url:    /docs/sqlp/3-4-2_소트머지조인
+      - title:  🌠 3-4-3. 해시 조인
+        url:    /docs/sqlp/3-4-3_해시조인
+      - title:  🌠 3-4-4. 스칼라 서브쿼리
+        url:    /docs/sqlp/3-4-4_스칼라서브쿼리
+      - title:  🌠 3-4-5. 고급 조인 기법
+        url:    /docs/sqlp/3-4-5_고급조인기법
+  - title:      ⭐ 제5장 SQL 옵티마이저
+    children:
+      - title:  🌠 3-5-1. SQL 옵티마이징 원리
+        url:    /docs/sqlp/3-5-1_SQL옵티마이징원리
+      - title:  🌠 3-5-2. SQL 공유 및 재사용
+        url:    /docs/sqlp/3-5-2_SQL공유및재사용
+      - title:  🌠 3-5-3. 쿼리 변환
+        url:    /docs/sqlp/3-5-3_쿼리변환
+  - title:      ⭐ 제6장 고급 SQL 튜닝
+    children:
+      - title:  🌠 3-6-1. 소트 튜닝
+        url:    /docs/sqlp/3-6-1_소트튜닝
+      - title:  🌠 3-6-2. DML 튜닝
+        url:    /docs/sqlp/3-6-2_DML튜닝
+      - title:  🌠 3-6-3. 데이터베이스 Call 최소화
+        url:    /docs/sqlp/3-6-3_데이터베이스Call최소화
+      - title:  🌠 3-6-4. 파티셔닝
+        url:    /docs/sqlp/3-6-4_파티셔닝
+      - title:  🌠 3-6-5. 대용량 배치 프로그램 튜닝
+        url:    /docs/sqlp/3-6-5_대용량배치프로그램튜닝
+      - title:  🌠 3-6-6. 고급 SQL 활용
+        url:    /docs/sqlp/3-6-6_고급SQL활용
+  - title:      ⭐ 제7장 Lock과 트랜잭션 동시성 제어
+    children:
+      - title:  🌠 3-7-1. Lock
+        url:    /docs/sqlp/3-7-1_Lock
+      - title:  🌠 3-7-2. 트랜잭션
+        url:    /docs/sqlp/3-7-2_트랜잭션
+      - title:  🌠 3-7-3. 동시성 제어
+        url:    /docs/sqlp/3-7-3_동시성제어
+
+
+
+docs-dap:
+  - title:      😀 과목1. 전사아키텍처 이해
+  - title:      ⭐ 제1장 전사아키텍처 개요
+      - title:  🌠 1-1-1. 전사아키텍처 정의
+        url:    /docs/dap/1-1-1-전사아키텍처-정의
+      - title:  🌠 1-1-2. 전사아키텍처 프레임워크
+        url:    /docs/dap/1-1-2-전사아키텍처-프레임워크
+      - title:  🌠 1-1-3. 전사아키텍처 참조 모델
+        url:    /docs/dap/1-1-3-전사아키텍처-참조-모델
+      - title:  🌠 1-1-4. 전사아키텍처 프로세스
+        url:    /docs/dap/1-1-4-전사아키텍처-프로세스
+      - title:  🌠 1-1-5. 장 요약
+        url:    /docs/dap/1-1-5-장-요약
+      - title:  🌠 1-1-6. 연습문제
+        url:    /docs/dap/1-1-6-연습문제
+  - title:      ⭐ 제2장 전사아키텍처 구축
+      - title:  🌠 1-2-1. 전사아키텍처 방향 수립
+        url:    /docs/dap/1-2-1-전사아키텍처-방향-수립
+      - title:  🌠 1-2-2. 전사아키텍처 정보 구성 정의
+        url:    /docs/dap/1-2-2-전사아키텍처-정보-구성-정의
+      - title:  🌠 1-2-3. 전사아키텍처 정보 구축
+        url:    /docs/dap/1-2-3-전사아키텍처-정보-구축
+      - title:  🌠 1-2-4. 장 요약
+        url:    /docs/dap/1-2-4-장-요약
+      - title:  🌠 1-2-5. 연습문제
+        url:    /docs/dap/1-2-5-연습문제
+  - title:      ⭐ 제3장 전사아키텍처 관리 및 활용
+      - title:  🌠 1-3-1. 전사아키텍처 관리 체계
+        url:    /docs/dap/1-3-1-전사아키텍처-관리-체계
+      - title:  🌠 1-3-2. 전사아키텍처 관리 시스템
+        url:    /docs/dap/1-3-2-전사아키텍처-관리-시스템
+      - title:  🌠 1-3-3. 전사아키텍처 활용
+        url:    /docs/dap/1-3-3-전사아키텍처-활용
+      - title:  🌠 1-3-4. 장 요약
+        url:    /docs/dap/1-3-4-장-요약
+      - title:  🌠 1-3-5. 연습문제
+        url:    /docs/dap/1-3-5-연습문제
+  - title:      😀 과목2. 데이터 요건 분석
+  - title:      ⭐ 제1장 정보 요구 사항 개요
+      - title:  🌠 2-1-1. 정보 요구 사항
+        url:    /docs/dap/2-1-1-정보-요구-사항
+      - title:  🌠 2-1-2. 정보 요구 사항 관리
+        url:    /docs/dap/2-1-2-정보-요구-사항-관리
+      - title:  🌠 2-1-3. 장 요약
+        url:    /docs/dap/2-1-3-장-요약
+      - title:  🌠 2-1-4. 연습문제
+        url:    /docs/dap/2-1-4-연습문제
+  - title:      ⭐ 제2장 정보 요구 사항 조사
+      - title:  🌠 2-2-1. 정보 요구 사항 수집
+        url:    /docs/dap/2-2-1-정보-요구-사항-수집
+      - title:  🌠 2-2-2. 정보 요구 사항 정리
+        url:    /docs/dap/2-2-2-정보-요구-사항-정리
+      - title:  🌠 2-2-3. 정보 요구 사항 통합
+        url:    /docs/dap/2-2-3-정보-요구-사항-통합
+      - title:  🌠 2-2-4. 장 요약
+        url:    /docs/dap/2-2-4-장-요약
+      - title:  🌠 2-2-5. 연습문제
+        url:    /docs/dap/2-2-5-연습문제
+  - title:      ⭐ 제3장 정보 요구 사항 분석
+      - title:  🌠 2-3-1. 분석 대상 정의
+        url:    /docs/dap/2-3-1-분석-대상-정의
+      - title:  🌠 2-3-2. 정보 요구 사항 상세화
+        url:    /docs/dap/2-3-2-정보-요구-사항-상세화
+      - title:  🌠 2-3-3. 정보 요구 사항 확인
+        url:    /docs/dap/2-3-3-정보-요구-사항-확인
+      - title:  🌠 2-3-4. 장 요약
+        url:    /docs/dap/2-3-4-장-요약
+      - title:  🌠 2-3-5. 연습문제
+        url:    /docs/dap/2-3-5-연습문제
+  - title:      ⭐ 제4장 정보 요구 검증
+      - title:  🌠 2-4-1. 정보 요구 상관분석 기법
+        url:    /docs/dap/2-4-1-정보-요구-상관분석-기법
+      - title:  🌠 2-4-2. 추가 및 삭제 정보 요구 사항 도출
+        url:    /docs/dap/2-4-2-추가-및-삭제-정보-요구-사항-도출
+      - title:  🌠 2-4-3. 정보 요구 사항 보완 및 확정
+        url:    /docs/dap/2-4-3-정보-요구-사항-보완-및-확정
+      - title:  🌠 2-4-4. 장 요약
+        url:    /docs/dap/2-4-4-장-요약
+      - title:  🌠 2-4-5. 연습문제
+        url:    /docs/dap/2-4-5-연습문제
+  - title:      😀 과목3. 데이터 표준화
+  - title:      ⭐ 제1장 데이터 표준화 개요
+      - title:  🌠 3-1-1. 데이터 표준화 필요성
+        url:    /docs/dap/3-1-1-데이터-표준화-필요성
+      - title:  🌠 3-1-2. 데이터 표준화 개념
+        url:    /docs/dap/3-1-2-데이터-표준화-개념
+      - title:  🌠 3-1-3. 데이터 표준 관리 도구
+        url:    /docs/dap/3-1-3-데이터-표준-관리-도구
+      - title:  🌠 3-1-4. 장 요약
+        url:    /docs/dap/3-1-4-장-요약
+      - title:  🌠 3-1-5. 연습문제
+        url:    /docs/dap/3-1-5-연습문제
+  - title:      ⭐ 제2장 데이터 표준 수립
+      - title:  🌠 3-2-1. 데이터 표준화 원칙 정의
+        url:    /docs/dap/3-2-1-데이터-표준화-원칙-정의
+      - title:  🌠 3-2-2. 데이터 표준 정의
+        url:    /docs/dap/3-2-2-데이터-표준-정의
+      - title:  🌠 3-2-3. 데이터 표준 확정
+        url:    /docs/dap/3-2-3-데이터-표준-확정
+      - title:  🌠 3-2-4. 장 요약
+        url:    /docs/dap/3-2-4-장-요약
+      - title:  🌠 3-2-5. 연습문제
+        url:    /docs/dap/3-2-5-연습문제
+  - title:      ⭐ 제3장 데이터 표준 관리
+      - title:  🌠 3-3-1. 데이터 표준 관리
+        url:    /docs/dap/3-3-1-데이터-표준-관리
+      - title:  🌠 3-3-2. 데이터 표준 관리 프로세스
+        url:    /docs/dap/3-3-2-데이터-표준-관리-프로세스
+      - title:  🌠 3-3-3. 장 요약
+        url:    /docs/dap/3-3-3-장-요약
+      - title:  🌠 3-3-4. 연습문제
+        url:    /docs/dap/3-3-4-연습문제
+  - title:      😀 과목4. 데이터 모델링
+  - title:      ⭐ 제1장 데이터 모델링 이해
+      - title:  🌠 4-1-1. 데이터 모델링 개요
+        url:    /docs/dap/4-1-1-데이터-모델링-개요
+      - title:  🌠 4-1-2. 데이터 모델링 기법 이해
+        url:    /docs/dap/4-1-2-데이터-모델링-기법-이해
+      - title:  🌠 4-1-3. 데이터 모델링 표기법 이해
+        url:    /docs/dap/4-1-3-데이터-모델링-표기법-이해
+      - title:  🌠 4-1-4. 장 요약
+        url:    /docs/dap/4-1-4-장-요약
+      - title:  🌠 4-1-5. 연습문제
+        url:    /docs/dap/4-1-5-연습문제
+  - title:      ⭐ 제2장 개념 데이터 모델링
+      - title:  🌠 4-2-1. 개념 데이터 모델링 이해
+        url:    /docs/dap/4-2-1-개념-데이터-모델링-이해
+      - title:  🌠 4-2-2. 주제 영역 정의
+        url:    /docs/dap/4-2-2-주제-영역-정의
+      - title:  🌠 4-2-3. 후보 엔터티 설정
+        url:    /docs/dap/4-2-3-후보-엔터티-설정
+      - title:  🌠 4-2-4. 핵심 엔터티 정의
+        url:    /docs/dap/4-2-4-핵심-엔터티-정의
+      - title:  🌠 4-2-5. 관계(Relationship) 정의
+        url:    /docs/dap/4-2-5-관계-Relationship--정의
+      - title:  🌠 4-2-6. 개념 데이터 모델 작성
+        url:    /docs/dap/4-2-6-개념-데이터-모델-작성
+      - title:  🌠 4-2-7. 장 요약
+        url:    /docs/dap/4-2-7-장-요약
+      - title:  🌠 4-2-8. 연습문제
+        url:    /docs/dap/4-2-8-연습문제
+  - title:      ⭐ 제3장 논리 데이터 모델링
+      - title:  🌠 4-3-1. 논리 데이터 모델링 이해
+        url:    /docs/dap/4-3-1-논리-데이터-모델링-이해
+      - title:  🌠 4-3-2. 속성 정의
+        url:    /docs/dap/4-3-2-속성-정의
+      - title:  🌠 4-3-3. 엔터티 상세화
+        url:    /docs/dap/4-3-3-엔터티-상세화
+      - title:  🌠 4-3-4. 이력 관리 정의
+        url:    /docs/dap/4-3-4-이력-관리-정의
+      - title:  🌠 4-3-5. 논리 데이터 모델 품질 검토
+        url:    /docs/dap/4-3-5-논리-데이터-모델-품질-검토
+      - title:  🌠 4-3-6. 장 요약
+        url:    /docs/dap/4-3-6-장-요약
+      - title:  🌠 4-3-7. 연습문제
+        url:    /docs/dap/4-3-7-연습문제
+  - title:      ⭐ 제4장 물리 데이터 모델링
+      - title:  🌠 4-4-1. 물리 데이터 모델링 이해
+        url:    /docs/dap/4-4-1-물리-데이터-모델링-이해
+      - title:  🌠 4-4-2. 물리 요소 조사 및 분석
+        url:    /docs/dap/4-4-2-물리-요소-조사-및-분석
+      - title:  🌠 4-4-3. 논리-물리 모델 변환
+        url:    /docs/dap/4-4-3-논리-물리-모델-변환
+      - title:  🌠 4-4-4. 반정규화
+        url:    /docs/dap/4-4-4-반정규화
+      - title:  🌠 4-4-5. 물리 데이터 모델 품질 검토
+        url:    /docs/dap/4-4-5-물리-데이터-모델-품질-검토
+      - title:  🌠 4-4-6. 장 요약
+        url:    /docs/dap/4-4-6-장-요약
+      - title:  🌠 4-4-7. 연습문제
+        url:    /docs/dap/4-4-7-연습문제
+  - title:      😀 과목5. 데이터베이스 설계와 이용
+  - title:      ⭐ 제1장 데이터베이스 설계
+      - title:  🌠 5-1-1. 저장 공간 설계
+        url:    /docs/dap/5-1-1-저장-공간-설계
+      - title:  🌠 5-1-2. 무결성 설계
+        url:    /docs/dap/5-1-2-무결성-설계
+      - title:  🌠 5-1-3. 인덱스 설계
+        url:    /docs/dap/5-1-3-인덱스-설계
+      - title:  🌠 5-1-4. 분산 설계
+        url:    /docs/dap/5-1-4-분산-설계
+      - title:  🌠 5-1-5. 보안 설계
+        url:    /docs/dap/5-1-5-보안-설계
+      - title:  🌠 5-1-6. 장 요약
+        url:    /docs/dap/5-1-6-장-요약
+      - title:  🌠 5-1-7. 연습문제
+        url:    /docs/dap/5-1-7-연습문제
+  - title:      ⭐ 제2장 데이터베이스 이용
+      - title:  🌠 5-2-1. 데이터베이스 관리 시스템(DBMS)
+        url:    /docs/dap/5-2-1-데이터베이스-관리-시스템-DBMS-
+      - title:  🌠 5-2-2. 데이터 액세스
+        url:    /docs/dap/5-2-2-데이터-액세스
+      - title:  🌠 5-2-3. 트랜잭션
+        url:    /docs/dap/5-2-3-트랜잭션
+      - title:  🌠 5-2-4. 백업 및 복구
+        url:    /docs/dap/5-2-4-백업-및-복구
+      - title:  🌠 5-2-5. 장 요약
+        url:    /docs/dap/5-2-5-장-요약
+      - title:  🌠 5-2-6. 연습문제
+        url:    /docs/dap/5-2-6-연습문제
+  - title:      ⭐ 제3장 데이터베이스 성능 개선
+      - title:  🌠 5-3-1. 성능 개선 방법론
+        url:    /docs/dap/5-3-1-성능-개선-방법론
+      - title:  🌠 5-3-2. 조인(Join)
+        url:    /docs/dap/5-3-2-조인-Join-
+      - title:  🌠 5-3-3. 애플리케이션 성능 개선
+        url:    /docs/dap/5-3-3-애플리케이션-성능-개선
+      - title:  🌠 5-3-4. 서버 성능 개선
+        url:    /docs/dap/5-3-4-서버-성능-개선
+      - title:  🌠 5-3-5. 장 요약
+        url:    /docs/dap/5-3-5-장-요약
+      - title:  🌠 5-3-6. 연습문제
+        url:    /docs/dap/5-3-6-연습문제
+  - title:      😀 과목6. 데이터 품질 관리 이해
+  - title:      ⭐ 제1장 데이터 이해
+      - title:  🌠 6-1-1. 데이터 품질 관리 프레임워크
+        url:    /docs/dap/6-1-1-데이터-품질-관리-프레임워크
+      - title:  🌠 6-1-2. 표준 데이터
+        url:    /docs/dap/6-1-2-표준-데이터
+      - title:  🌠 6-1-3. 모델 데이터
+        url:    /docs/dap/6-1-3-모델-데이터
+      - title:  🌠 6-1-4. 관리 데이터
+        url:    /docs/dap/6-1-4-관리-데이터
+      - title:  🌠 6-1-5. 업무 데이터
+        url:    /docs/dap/6-1-5-업무-데이터
+      - title:  🌠 6-1-6. 장 요약
+        url:    /docs/dap/6-1-6-장-요약
+      - title:  🌠 6-1-7. 연습문제
+        url:    /docs/dap/6-1-7-연습문제
+  - title:      ⭐ 제2장 데이터 구조 이해
+      - title:  🌠 6-2-1. 개념 데이터 모델
+        url:    /docs/dap/6-2-1-개념-데이터-모델
+      - title:  🌠 6-2-2. 데이터 참조 모델
+        url:    /docs/dap/6-2-2-데이터-참조-모델
+      - title:  🌠 6-2-3. 논리 데이터 모델
+        url:    /docs/dap/6-2-3-논리-데이터-모델
+      - title:  🌠 6-2-4. 물리 데이터 모델
+        url:    /docs/dap/6-2-4-물리-데이터-모델
+      - title:  🌠 6-2-5. 데이터베이스
+        url:    /docs/dap/6-2-5-데이터베이스
+      - title:  🌠 6-2-6. 사용자 뷰
+        url:    /docs/dap/6-2-6-사용자-뷰
+      - title:  🌠 6-2-7. 장 요약
+        url:    /docs/dap/6-2-7-장-요약
+      - title:  🌠 6-2-8. 연습문제
+        url:    /docs/dap/6-2-8-연습문제
+  - title:      ⭐ 제3장 데이터 관리 프로세스 이해
+      - title:  🌠 6-3-1. 데이터 관리 정책
+        url:    /docs/dap/6-3-1-데이터-관리-정책
+      - title:  🌠 6-3-2. 데이터 표준 관리
+        url:    /docs/dap/6-3-2-데이터-표준-관리
+      - title:  🌠 6-3-3. 요구 사항 관리
+        url:    /docs/dap/6-3-3-요구-사항-관리
+      - title:  🌠 6-3-4. 데이터 모델 관리
+        url:    /docs/dap/6-3-4-데이터-모델-관리
+      - title:  🌠 6-3-5. 데이터 흐름 관리
+        url:    /docs/dap/6-3-5-데이터-흐름-관리
+      - title:  🌠 6-3-6. 데이터베이스 관리
+        url:    /docs/dap/6-3-6-데이터베이스-관리
+      - title:  🌠 6-3-7. 데이터 활용 관리
+        url:    /docs/dap/6-3-7-데이터-활용-관리
+      - title:  🌠 6-3-8. 장 요약
+        url:    /docs/dap/6-3-8-장-요약
+      - title:  🌠 6-3-9. 연습문제
+        url:    /docs/dap/6-3-9-연습문제
+      - title:  🌠 6-3-10. 연습문제 실기
+        url:    /docs/dap/6-3-10-연습문제-실기
+
+layouts:
+  - title: Layouts
+    children:
+      - title:  Single
+        url:    /page/single.html
+      - title:  Aside
+        url:    /page/aside.html
+      - title:  Sidebar
+        url:    /page/sidebar.html
+
+      - title:  Sidebar (Aside)
+        url:    /page/sidebar-aside.html
+      - title:  Article Header Overlay Background Fill
+        url:    /page/article-header-overlay-background-fill.html
+      - title:  Article Header Overlay Background Image
+        url:    /page/article-header-overlay-background-image.html
+
+      - title:  Article Header Image
+        url:    /page/article-header-cover-image.html
+      - title:  Article Header Overlay Background Image (Customized Header Background)
+        url:    /page/article-header-overlay-background-image-header-background.html
+      - title:  Article Header Image (Customized Header Background)
+        url:    /page/article-header-cover-image-header-background.html
+
+      - title:  Article Header Overlay Background Fill (Immersive + Translucent Header)
+        url:    /page/article-header-overlay-background-fill-immersive-translucent-header.html
+      - title:  Article Header Overlay Background Image (Immersive + Translucent Header)
+        url:    /page/article-header-overlay-background-image-immersive-translucent-header.html
+      - title:  Article Header Image (Immersive + Translucent Header)
+        url:    /page/article-header-cover-image-immersive-translucent-header.html
