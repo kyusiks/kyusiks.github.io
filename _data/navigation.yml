@@ -165,6 +165,7 @@ docs-sqlp:
 docs-dap:
   - title:      😀 과목1. 전사아키텍처 이해
   - title:      ⭐ 제1장 전사아키텍처 개요
+    children:
       - title:  🌠 1-1-1. 전사아키텍처 정의
         url:    /docs/dap/1-1-1-전사아키텍처-정의
       - title:  🌠 1-1-2. 전사아키텍처 프레임워크
@@ -178,6 +179,7 @@ docs-dap:
       - title:  🌠 1-1-6. 연습문제
         url:    /docs/dap/1-1-6-연습문제
   - title:      ⭐ 제2장 전사아키텍처 구축
+    children:
       - title:  🌠 1-2-1. 전사아키텍처 방향 수립
         url:    /docs/dap/1-2-1-전사아키텍처-방향-수립
       - title:  🌠 1-2-2. 전사아키텍처 정보 구성 정의
@@ -189,6 +191,7 @@ docs-dap:
       - title:  🌠 1-2-5. 연습문제
         url:    /docs/dap/1-2-5-연습문제
   - title:      ⭐ 제3장 전사아키텍처 관리 및 활용
+    children:
       - title:  🌠 1-3-1. 전사아키텍처 관리 체계
         url:    /docs/dap/1-3-1-전사아키텍처-관리-체계
       - title:  🌠 1-3-2. 전사아키텍처 관리 시스템
@@ -201,6 +204,7 @@ docs-dap:
         url:    /docs/dap/1-3-5-연습문제
   - title:      😀 과목2. 데이터 요건 분석
   - title:      ⭐ 제1장 정보 요구 사항 개요
+    children:
       - title:  🌠 2-1-1. 정보 요구 사항
         url:    /docs/dap/2-1-1-정보-요구-사항
       - title:  🌠 2-1-2. 정보 요구 사항 관리
@@ -210,6 +214,7 @@ docs-dap:
       - title:  🌠 2-1-4. 연습문제
         url:    /docs/dap/2-1-4-연습문제
   - title:      ⭐ 제2장 정보 요구 사항 조사
+    children:
       - title:  🌠 2-2-1. 정보 요구 사항 수집
         url:    /docs/dap/2-2-1-정보-요구-사항-수집
       - title:  🌠 2-2-2. 정보 요구 사항 정리
@@ -221,6 +226,7 @@ docs-dap:
       - title:  🌠 2-2-5. 연습문제
         url:    /docs/dap/2-2-5-연습문제
   - title:      ⭐ 제3장 정보 요구 사항 분석
+    children:
       - title:  🌠 2-3-1. 분석 대상 정의
         url:    /docs/dap/2-3-1-분석-대상-정의
       - title:  🌠 2-3-2. 정보 요구 사항 상세화
@@ -232,6 +238,7 @@ docs-dap:
       - title:  🌠 2-3-5. 연습문제
         url:    /docs/dap/2-3-5-연습문제
   - title:      ⭐ 제4장 정보 요구 검증
+    children:
       - title:  🌠 2-4-1. 정보 요구 상관분석 기법
         url:    /docs/dap/2-4-1-정보-요구-상관분석-기법
       - title:  🌠 2-4-2. 추가 및 삭제 정보 요구 사항 도출
@@ -244,6 +251,7 @@ docs-dap:
         url:    /docs/dap/2-4-5-연습문제
   - title:      😀 과목3. 데이터 표준화
   - title:      ⭐ 제1장 데이터 표준화 개요
+    children:
       - title:  🌠 3-1-1. 데이터 표준화 필요성
         url:    /docs/dap/3-1-1-데이터-표준화-필요성
       - title:  🌠 3-1-2. 데이터 표준화 개념
@@ -255,6 +263,7 @@ docs-dap:
       - title:  🌠 3-1-5. 연습문제
         url:    /docs/dap/3-1-5-연습문제
   - title:      ⭐ 제2장 데이터 표준 수립
+    children:
       - title:  🌠 3-2-1. 데이터 표준화 원칙 정의
         url:    /docs/dap/3-2-1-데이터-표준화-원칙-정의
       - title:  🌠 3-2-2. 데이터 표준 정의
@@ -266,6 +275,7 @@ docs-dap:
       - title:  🌠 3-2-5. 연습문제
         url:    /docs/dap/3-2-5-연습문제
   - title:      ⭐ 제3장 데이터 표준 관리
+    children:
       - title:  🌠 3-3-1. 데이터 표준 관리
         url:    /docs/dap/3-3-1-데이터-표준-관리
       - title:  🌠 3-3-2. 데이터 표준 관리 프로세스
@@ -276,6 +286,7 @@ docs-dap:
         url:    /docs/dap/3-3-4-연습문제
   - title:      😀 과목4. 데이터 모델링
   - title:      ⭐ 제1장 데이터 모델링 이해
+    children:
       - title:  🌠 4-1-1. 데이터 모델링 개요
         url:    /docs/dap/4-1-1-데이터-모델링-개요
       - title:  🌠 4-1-2. 데이터 모델링 기법 이해
@@ -287,6 +298,7 @@ docs-dap:
       - title:  🌠 4-1-5. 연습문제
         url:    /docs/dap/4-1-5-연습문제
   - title:      ⭐ 제2장 개념 데이터 모델링
+    children:
       - title:  🌠 4-2-1. 개념 데이터 모델링 이해
         url:    /docs/dap/4-2-1-개념-데이터-모델링-이해
       - title:  🌠 4-2-2. 주제 영역 정의
@@ -304,6 +316,7 @@ docs-dap:
       - title:  🌠 4-2-8. 연습문제
         url:    /docs/dap/4-2-8-연습문제
   - title:      ⭐ 제3장 논리 데이터 모델링
+    children:
       - title:  🌠 4-3-1. 논리 데이터 모델링 이해
         url:    /docs/dap/4-3-1-논리-데이터-모델링-이해
       - title:  🌠 4-3-2. 속성 정의
@@ -319,6 +332,7 @@ docs-dap:
       - title:  🌠 4-3-7. 연습문제
         url:    /docs/dap/4-3-7-연습문제
   - title:      ⭐ 제4장 물리 데이터 모델링
+    children:
       - title:  🌠 4-4-1. 물리 데이터 모델링 이해
         url:    /docs/dap/4-4-1-물리-데이터-모델링-이해
       - title:  🌠 4-4-2. 물리 요소 조사 및 분석
@@ -335,6 +349,7 @@ docs-dap:
         url:    /docs/dap/4-4-7-연습문제
   - title:      😀 과목5. 데이터베이스 설계와 이용
   - title:      ⭐ 제1장 데이터베이스 설계
+    children:
       - title:  🌠 5-1-1. 저장 공간 설계
         url:    /docs/dap/5-1-1-저장-공간-설계
       - title:  🌠 5-1-2. 무결성 설계
@@ -350,6 +365,7 @@ docs-dap:
       - title:  🌠 5-1-7. 연습문제
         url:    /docs/dap/5-1-7-연습문제
   - title:      ⭐ 제2장 데이터베이스 이용
+    children:
       - title:  🌠 5-2-1. 데이터베이스 관리 시스템(DBMS)
         url:    /docs/dap/5-2-1-데이터베이스-관리-시스템-DBMS-
       - title:  🌠 5-2-2. 데이터 액세스
@@ -363,6 +379,7 @@ docs-dap:
       - title:  🌠 5-2-6. 연습문제
         url:    /docs/dap/5-2-6-연습문제
   - title:      ⭐ 제3장 데이터베이스 성능 개선
+    children:
       - title:  🌠 5-3-1. 성능 개선 방법론
         url:    /docs/dap/5-3-1-성능-개선-방법론
       - title:  🌠 5-3-2. 조인(Join)
@@ -377,6 +394,7 @@ docs-dap:
         url:    /docs/dap/5-3-6-연습문제
   - title:      😀 과목6. 데이터 품질 관리 이해
   - title:      ⭐ 제1장 데이터 이해
+    children:
       - title:  🌠 6-1-1. 데이터 품질 관리 프레임워크
         url:    /docs/dap/6-1-1-데이터-품질-관리-프레임워크
       - title:  🌠 6-1-2. 표준 데이터
@@ -392,6 +410,7 @@ docs-dap:
       - title:  🌠 6-1-7. 연습문제
         url:    /docs/dap/6-1-7-연습문제
   - title:      ⭐ 제2장 데이터 구조 이해
+    children:
       - title:  🌠 6-2-1. 개념 데이터 모델
         url:    /docs/dap/6-2-1-개념-데이터-모델
       - title:  🌠 6-2-2. 데이터 참조 모델
@@ -409,6 +428,7 @@ docs-dap:
       - title:  🌠 6-2-8. 연습문제
         url:    /docs/dap/6-2-8-연습문제
   - title:      ⭐ 제3장 데이터 관리 프로세스 이해
+    children:
       - title:  🌠 6-3-1. 데이터 관리 정책
         url:    /docs/dap/6-3-1-데이터-관리-정책
       - title:  🌠 6-3-2. 데이터 표준 관리
